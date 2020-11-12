@@ -1,0 +1,66 @@
+.pre_foot {
+    margin: 4rem 0;
+    .col-md-9 {
+        h5 {
+            white-space: nowrap;
+            margin-right: 5rem;
+        }
+    }
+    .col-md-3 {
+        img {
+            width: 1.5rem;
+            margin: 0 .8rem;
+        }
+        
+        h5 {
+            white-space: nowrap;
+            margin-right: 2rem;
+        }
+        
+    }
+    .input-group{
+        input {
+            width: 250px;
+            flex: 0 0 200px;
+            border-radius: 18px;
+            height: 36px;
+            outline: none;
+            font-size: 14px;
+        }
+    }
+}
+
+.footer{
+    padding-bottom: 3rem;
+    .col-md-8{
+        img {
+            width: 80px;
+        }
+
+        a {
+            font-size : 13px;
+            color : #303030;
+        }
+    }
+
+    .col-md-4{
+        h5 {
+            font-size : 9px;
+            color : #303030;
+        }
+
+        & > img {
+            width: 260px;
+            margin: .5rem 0;
+            display: block;
+        }
+
+        .payment_m{
+            img {
+                display: block;
+                width: 190px;
+                margin-left: 2rem;
+            }
+        }
+    }
+}

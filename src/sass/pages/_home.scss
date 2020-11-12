@@ -1,0 +1,102 @@
+#outerWrapper {
+    padding: 0 26rem;
+    background-color: #F9F9F9;
+    min-height: 100vh;
+}
+
+.products_slider{
+    margin: 5rem 0;
+
+    .card{
+        background : rgba(255, 255, 255, 1);
+        border-style : Solid;
+        border-color : rgba(234, 234, 234, 1);
+        border-width : 1px;
+        border-radius : 44px 44px 0px 0px; 
+
+        .card-title{
+            font-size : 13px;
+            color : #5B5B5B;
+        }
+
+        .card-img-top{
+            max-height: 200px;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .price{
+            font-size : 14px;
+            color : #964C9C;
+            font-weight: bold;
+        }
+
+        .pre_price_outer{
+            color: rgba(134, 242, 239, 1);;
+            text-decoration: line-through;
+        }
+        .pre_price {
+            font-size : 12px;
+            color : #B5B5B5;
+
+        }
+
+        .favorite{
+            color: #B5B5B5;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+.banner{
+    background-position-y: 21%;
+    background-position-x: 100%;
+    position: relative;
+    height: 220px;
+    width: 100%;
+    border-radius: 44px;
+    margin: 5rem 0;
+    background-repeat: no-repeat;
+    &_title {
+        font-size : 61px;
+        color : #FFFFFF;
+    }
+   
+}
+
+.perCat_slider{
+
+    .swiper-slide {
+        border-radius: 26px;
+        overflow: hidden;
+        background-position: center 10%;
+    }
+    .category{
+        height: 170px;
+        width: 100%;
+       
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+.foot_banner {
+    background-image: url("../img/shape1.svg");
+    background-size: cover;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+
+    .media{
+        img {
+            min-width: 33px;
+            max-width: 35px;
+        }
+
+        h5 {
+            margin-bottom: 1rem;
+        }
+    }
+}

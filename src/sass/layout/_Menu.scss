@@ -1,0 +1,163 @@
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    z-index: 999999999;
+    display: none;
+    .closeMenu {
+        position: absolute;
+        top: 4rem;
+        right: 5rem;
+        img {
+         width: 24px;
+         opacity: .8;
+        }
+    }
+   .popup__container {
+        width: 30%;
+        min-width: 490px;
+        float: right;
+        height: 100%;
+        background-color: #F6F5F3;
+       background-size: cover;
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 75%);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 5rem 6rem 3rem 10rem;
+       overflow-y: scroll;
+       @include respond(tab-land) {
+        padding: 4rem 4rem 6rem 12rem;
+        width: 70%;
+       }
+       @include respond(phone) {
+        width: 100%;
+        min-width: 100%;
+        padding: 4rem 4rem 6rem 8rem;
+        
+       }
+   }
+
+
+
+   .popup__menu-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       li {
+           margin-bottom: 2.5rem;
+
+           
+          
+            @include respond(tab-land)  {
+                display: block;
+            }
+           
+        a {
+            font-family: "Oswald", sans-serif !important;
+            color: $mainColor;
+            font-weight: 300;
+            font-size: 29px;
+            text-transform: uppercase;
+            @include respond(phone) {
+                font-size: 25px;
+                
+               }
+
+            .tri {
+                visibility: hidden;
+                opacity: 0;
+                 transition: all .3s ease;
+                 margin: 0 .5rem 0;
+                 margin-left: -.3rem;
+                 width: 1.4rem;
+            }
+
+            &:hover, &:Active {
+                .tri {
+                    visibility: visible;
+                    opacity: 1;
+               } 
+            }
+           
+ 
+        }
+        &.menu-item-has-children {
+            .sub-menu {
+                margin: 2rem 0;
+                margin-left: 2rem;
+                display: none;
+            
+                height: max-content;
+
+                a {
+                    font-family: 'Montserrat', sans-serif!important;
+                    font-size: 15px;
+                    font-weight: 400;
+
+                    img {
+                        display: none!important;
+                    }
+                }
+            }
+       }
+       }
+
+       .closeMenu {
+        align-self: flex-end;
+        display: block;
+        margin-bottom: 5rem;
+        @include respond(tab-land) {
+            margin-bottom: 1rem;
+        }
+       }
+   }
+
+   .followUs {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 6rem;
+   
+    h6 {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 1rem;
+        @include respond(tab-land) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    a {
+        @include respond(tab-land) {
+            margin-right: 5rem;
+        }
+    }
+   }
+   
+}
+
+
+
+[dir="rtl"] {
+    .popup .popup__menu-cont li a,.popup .popup__menu-cont li.menu-item-has-children .sub-menu a {
+        font-family: "Cairo", sans-serif !important;
+
+    }
+    .history_cont .tabs a {
+        font-size: 22px;
+    }
+
+    .careers_cont {
+        .tri_bull {
+            img {
+                transform: rotate(180deg) translateX(0);
+            }
+        }
+    }
+}
