@@ -13,6 +13,7 @@
         border-color : rgba(234, 234, 234, 1);
         border-width : 1px;
         border-radius : 44px 44px 0px 0px; 
+        overflow: hidden;
 
         .card-title{
             font-size : 13px;
@@ -24,21 +25,7 @@
             object-fit: cover;
             object-position: center top;
         }
-        .price{
-            font-size : 14px;
-            color : #964C9C;
-            font-weight: bold;
-        }
-
-        .pre_price_outer{
-            color: rgba(134, 242, 239, 1);;
-            text-decoration: line-through;
-        }
-        .pre_price {
-            font-size : 12px;
-            color : #B5B5B5;
-
-        }
+        
 
         .favorite{
             color: #B5B5B5;
@@ -47,6 +34,21 @@
     }
 }
 
+.price{
+    font-size : 14px;
+    color : #964C9C;
+    font-weight: bold;
+}
+
+.pre_price_outer{
+    color: rgba(134, 242, 239, 1);;
+    text-decoration: line-through;
+}
+.pre_price {
+    font-size : 12px;
+    color : #B5B5B5;
+
+}
 
 .banner{
     background-position-y: 21%;

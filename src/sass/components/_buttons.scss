@@ -35,9 +35,7 @@
                 width: 4rem;
             }
 
-            & > img {
-                transform: translateX(1rem);
-            }
+          
            
         }
 
@@ -85,22 +83,7 @@
 
 }
 
-[dir="rtl"] {
-    .btn {
-        & > img {
-            transform: rotate(180deg) translateX(0);
-        }
-        
-        &:hover {
-         
 
-            & > img {
-                transform: rotate(180deg) translateX(-1rem); 
-            }
-           
-        }
-    }
-}
 
 .btn_text{
     
@@ -119,7 +102,6 @@
         width: 2rem;
         margin-left: 1rem;
         display: block;
-        min-width: 2.5rem;
     }
   
 }
@@ -305,4 +287,8 @@
             font-weight: 600;
         }
     }
+}
+
+.btn:hover {
+   color: currentColor;
 }
