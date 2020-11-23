@@ -144,8 +144,8 @@ if (window.document.documentMode) {
 	  });
 
 	
-$(".parent_menu").each((i,el) => {
-	$(el).find("> a").hover(function(){
+$(".parent_menu_item").each((i,el) => {
+	$(el).hover(function(){
 		$(el).find(".sub_menu").fadeIn();
 		}, function(){
 			$(el).find(".sub_menu").fadeOut();
@@ -153,11 +153,6 @@ $(".parent_menu").each((i,el) => {
 });
 
 
-$(".sub_menu").hover(function(){
-	$(this).fadeIn();
-	}, function(){
-		$(this).fadeOut();
-  });
 
 
 	

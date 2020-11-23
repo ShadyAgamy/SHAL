@@ -1902,6 +1902,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .all_links .menu_item {
+    padding: 1rem .5rem;
+    margin-bottom: 2rem;
+    padding-top: 3rem; }
   .all_links a {
     font-size: 13px;
     color: black;
@@ -1912,42 +1916,42 @@ header {
     .all_links a.active {
       background-color: #F4F4F4; }
 
-.all_links .links {
+.parent_menu_item {
   position: relative; }
-
-.parent_menu .sub_menu {
-  position: absolute;
-  top: 4rem;
-  right: 0;
-  z-index: 999999;
-  background: white;
-  border-radius: 42px;
-  padding: 2rem;
-  min-width: 70rem;
-  display: none; }
-  .parent_menu .sub_menu .row {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .parent_menu .sub_menu_links {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; }
-    .parent_menu .sub_menu_links [class*="col-"] {
-      padding: 0; }
-    .parent_menu .sub_menu_links a {
-      white-space: nowrap;
-      margin-bottom: 1rem;
-      display: block;
-      padding: 0 1.5rem; }
-  .parent_menu .sub_menu img.w-100 {
-    border-radius: 22px;
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .parent_menu .sub_menu .title {
-    font-weight: 800;
-    font-size: 12px;
-    color: #3C3C3B;
-    margin-bottom: 1.5rem; }
+  .parent_menu_item .sub_menu {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    z-index: 999999;
+    background: white;
+    border-radius: 42px;
+    padding: 2rem 1rem;
+    min-width: 46rem;
+    display: none; }
+    .parent_menu_item .sub_menu .row {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .parent_menu_item .sub_menu_links {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .parent_menu_item .sub_menu_links [class*="col-"] {
+        padding: 0; }
+      .parent_menu_item .sub_menu_links a {
+        white-space: nowrap;
+        margin-bottom: 1rem;
+        display: block;
+        padding: 0 1.5rem;
+        margin-left: 19rem; }
+    .parent_menu_item .sub_menu img.w-100 {
+      border-radius: 22px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .parent_menu_item .sub_menu .title {
+      font-weight: 800;
+      font-size: 12px;
+      color: #3C3C3B;
+      margin-bottom: 1.5rem; }
 
 .popup {
   position: fixed;

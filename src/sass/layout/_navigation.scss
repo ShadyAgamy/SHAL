@@ -75,6 +75,14 @@
     justify-content: space-between;
     align-items: center;
 
+    .menu_item{
+        padding: 1rem .5rem;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+    }
+
+
+
     a{
         font-size: 13px;
         color: black;
@@ -92,20 +100,20 @@
    
 
     .links {
-        position: relative;
+        
     }
 }
-.parent_menu{
-   
+.parent_menu_item{
+    position: relative;
     .sub_menu{
         position: absolute;
-        top: 4rem;
+        top: 6rem;
         left: 0;
         z-index: 999999;
         background: white;
         border-radius: 42px;
-        padding: 2rem;
-        min-width: 70rem;
+        padding: 2rem 1rem;
+        min-width: 46rem;
         display: none;
         .row {
             align-items: flex-start;
@@ -121,6 +129,7 @@
                 margin-bottom: 1rem;
                 display: block;
                 padding: 0 1.5rem;
+                margin-right: 19rem;
             }
         }
 
